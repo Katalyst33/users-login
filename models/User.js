@@ -10,7 +10,12 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
 
-    sex:{
+    dob:{
+        type:Date,
+        required:true
+    },
+
+    bio:{
         type:String,
         required:true
     },

@@ -33,22 +33,34 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select Sex:</label>
-                    <select class="form-control" id="exampleFormControlSelect1"
-                            type="sex"
-                            id="sex"
-                            name="sex"
+                    <label for="dob">Date of Birth</label>
+                    <input
+                            type="date"
+                            id="dob"
+                            name="dob"
                             class="form-control"
-                            placeholder="sex"
+                            placeholder="Tell us about yourself"
+                            value="<%= typeof dob != 'undefined' ? dob : '' %>"
 
                     />
-
-
-                    <option  value="<%= typeof sex != 'undefined' ? sex : '' %>">Male</option>
-                    <option value="<%= typeof sex != 'undefined' ? sex : '' %>">Female</option>
-                    <option  value="<%= typeof sex != 'undefined' ? sex : '' %>"> I rather not Say</option>
-                    </select>
                 </div>
+
+                <div class="form-group">
+                    <label for="bio">Tell us about you</label>
+                    <textarea
+                            type="text"
+                            id="bio"
+                            name="bio"
+                            rows="5"
+                            class="form-control"
+                            placeholder="Tell us about yourself"
+                            value="<%= typeof bio != 'undefined' ? bio : '' %>"
+
+                    ></textarea>
+                </div>
+
+
+
 
 
                 <div class="form-group">
